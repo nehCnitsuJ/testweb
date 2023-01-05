@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @media screen and (min-width: 1440px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   html {
@@ -12,6 +12,8 @@
   }
   body {
     background: #111222;
+    display: flex;
+    flex-direction: column;
   }
   #navbar {
     z-index: 2;
@@ -49,7 +51,7 @@
   }
 
   #navbar-content a:after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: #5f8575;
     height: 3px;
@@ -83,16 +85,17 @@
   }
   .img-slider {
     position: relative;
-    width: 45vw;
-    height: auto;
-    margin-left: 50px;
-    background-color: #04aa6d;
+    width: 100vw;
+    height: 20vh;
+    /* margin-left: 50px; */
+    /* background-color: green; */
   }
 
   .img-slider .slide {
     z-index: 1;
     position: absolute;
     width: 100%;
+    height: 100%;
     clip-path: circle(0% at 0 50%);
   }
 
@@ -104,8 +107,11 @@
 
   .img-slider .slide img {
     z-index: 1;
-    width: 100%;
-    border-radius: 5px;
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    /* border-radius: 5px; */
   }
 
   .img-slider .slide .info {
@@ -131,16 +137,19 @@
     border-radius: 4px;
   }
 
-  .img-slider .navigation {
-    z-index: 2;
-    position: absolute;
+  .navigation {
     display: flex;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    max-width: fit-content;
+    align-self: center;
+    /* z-index: 2; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* background-color: pink; */
   }
 
-  .img-slider .navigation .btn {
+  .navigation .btn {
     background: rgba(255, 255, 255, 0.5);
     width: 12px;
     height: 12px;
@@ -149,7 +158,7 @@
     cursor: pointer;
   }
 
-  .img-slider .navigation .btn.active {
+  .navigation .btn.active {
     background: #2696e9;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   }
