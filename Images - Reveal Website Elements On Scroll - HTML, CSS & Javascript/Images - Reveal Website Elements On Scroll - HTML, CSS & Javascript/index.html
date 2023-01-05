@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reveal Website Elements On Scroll - HTML, CSS & Javascript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <header>
+    <!-- navbar -->
+    <div id="navbar">
+      <div id="navbar-content">
+        <h2>nge<span>e</span>-waste.</h2>
+        <a href="upload.html"> Post It Here! </a>
+        <a href="marketplace.html"> Marketplace </a>
+        <a href="contactus.html"> Contact Us! </a>
+        <a href="index.html"> Log Out</a>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <section class="sec-01">
+      <div class="container">
+        <div class="content">
+          <div class="image">
+            <img src="ewaste.png" alt="" />
+          </div>
+          <div class="text-box">
+            <h3>What is Ewaste?</h3>
+            <p>
+              Electronic waste, or more commonly known as E-Waste, refers to
+              electronic products that ceased to have any value to their users.
+              These electronic products can be new or old as long as it is being
+              discarded by its owner, it becomes an electronic waste. The 6 main
+              categories of e-waste includes:
+            </p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <div>
+            <i id="icon" class="bi bi-lamp"></i>
+            <div class="desc">Lamps</div>
+          </div>
+          <div>
+            <i id="icon" class="bi bi-earbuds"></i>
+            <div class="desc">Small equipments</div>
+          </div>
+          <div>
+            <i id="icon" class="bi bi-display"></i>
+            <div class="desc">Screen & Monitors</div>
+          </div>
+          <div>
+            <i id="icon" class="bi bi-battery-charging"></i>
+            <div class="desc">Small IT & telecom equipments</div>
+          </div>
+          <div>
+            <i id="icon" class="bi bi-thermometer-half"></i>
+            <div class="desc">Temperature exchange equipments</div>
+          </div>
+          <div>
+            <i id="icon" class="bi bi-printer"></i>
+            <div class="desc">Large equipments</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">What is Happening?</h3>
+        <div class="content">
+          <div class="image">
+            <img src="ewasteSG.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h4 class="info-title">E-Waste in Singapore</h4>
+            <p>
+              Do you know how much E-Waste is being generated in Singapore? A
+              staggering 60,000 tonnes of E-Waste is being generated annually in
+              Singapore. To put this into perspective, that number adds up to
+              about 70 mobile phones per person! Imagine that!
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="content">
+          <div class="info">
+            <h4 class="info-title">Why is E-Waste dangerous?</h4>
+            <p>
+              These discarded electronic products contains batteries or plugs
+              which contains toxic and hazardous contaminants that pose a severe
+              risk to both human and environmental health. These risks include
+              cancer, neurological damage and climate change.
+            </p>
+            <a
+              href="https://webuyusedtape.net/2022/04/27/what-kind-of-e-waste-is-bad-for-the-environment/"
+              class="wiggle-btn"
+            >
+              <span>Read More!</span>
+              <img src="btn5.png" class="btn-img" alt="button" />
+            </a>
+          </div>
+          <div class="image">
+            <img src="ewastebad.png" alt="" />
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="content">
+          <div id="orgimg" class="image">
+            <img src="ewasteEPR.jpg" alt="" />
+          </div>
+          <div id="zoom">
+            <img id="zoom-img" src="ewasteEPR.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h4 class="info-title">What is being done?</h4>
+            <p>
+              Singapore has established an initiative called Extended Producer
+              Responsibility (EPR) framework where producers of covered
+              electrical & electronic equipments will be responsible for the
+              collection & proper treatment of e-waste. Click the image to find
+              out more about EPR and below for e-waste collection points in
+              Singapore!
+            </p>
+            <a
+              href="https://www.nea.gov.sg/our-services/waste-management/3r-programmes-and-resources/e-waste-management/extended-producer-responsibility-(epr)-system-for-e-waste-management-system"
+              class="wiggle-btn"
+            >
+              <span>Find Out Here!</span>
+              <img src="btn5.png" class="btn-img" alt="button" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div id="headcontainer" class="container">
+      <h1>What can we do as individuals?</h1>
+    </div>
+
+    <section class = "timeline" id="timeline">
+      <div class="tl-item">
+        
+        <div class="tl-bg" style="background-image: url(https://media.istockphoto.com/vectors/electronics-repair-vector-vector-id584570730?k=20&m=584570730&s=170667a&w=0&h=FlMinkVVgZMHH_tkPE__wZ6MrRaITqelcFDXL1TEKqk=)"></div>
+        
+        <div class="tl-icon">
+          <i class="bi bi-1-circle"></i>
+        </div>
+    
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">Repair electronic equipments where feasible</h1>
+          <p>For those electronic equipments that have not fully spoilt, instead of discarding it you can try repairing
+            it by yourself, giving the equipment a new life.
+          </p>
+        </div>
+      </div>
+    
+      <div class="tl-item">
+        
+        <div class="tl-bg" style="background-image: url(https://media.istockphoto.com/vectors/businessman-giving-or-offering-money-to-another-hand-vector-flat-vector-id989229716?k=20&m=989229716&s=170667a&w=0&h=PfYoxwxmZEwLZ7Z4qd5O8q-ZvxYHMMp557hI8d_vbZU=)"></div>
+        
+        <div class="tl-icon">
+          <i class="bi bi-2-circle"></i>
+        </div>
+    
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">Find opportunities for reuse</h1>
+          <p>If the items are still in good working condition and you do not have any use for them, instead of 
+            discarding it, why not give it to someone else? You can also go an extra mile to donate these items
+            to charities.
+          </p>
+        </div>
+      </div>
+    
+      <div class="tl-item">
+        
+        <div class="tl-bg" style="background-image: url(https://img.freepik.com/premium-vector/e-waste-recycle-bin-with-old-electronic-equipment_169241-4674.jpg)"></div>
+        
+        <div class="tl-icon">
+          <i class="bi bi-3-circle"></i>
+        </div>
+    
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">Recycle</h1>
+          <p>Before you discard something, the first thought should always be "Can I recycle this?" Find e-waste collection
+            areas near you by clicking
+          </p>
+          <em><a href="https://www.nea.gov.sg/our-services/waste-management/3r-programmes-and-resources/e-waste-management/where-to-recycle-e-waste" style="text-decoration:none; color:white">
+            here.</em>
+          </a>
+        </div>
+      </div>
+    
+      <div class="tl-item">
+        
+        <div class="tl-bg" style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/011/468/911/small_2x/eco-friendly-icon-ecologic-food-stamp-organic-natural-healthy-food-product-label-free-vector.jpg)"></div>
+        
+        <div class="tl-icon">
+          <i class="bi bi-4-circle"></i>
+        </div>
+
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">Look for eco-label products</h1>
+          <p>While purchasing for electronic items, look for environmentally products that has Singapore Green
+            Label.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
