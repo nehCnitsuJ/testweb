@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@media screen and (min-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #111222;
+  }
+  #navbar {
+    z-index: 2;
+  }
+  #navbar-content {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+  }
+
+  #navbar-content h2 {
+    margin-right: 300px;
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-fill-color: black;
+  }
+  #navbar-content span {
+    -webkit-text-fill-color: #60c045;
+  }
+
+  #navbar-content a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+  }
+  #navbar-content a:hover {
+    color: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(114, 253, 45, 0.7818507863514459) 100%
+    );
+  }
+
+  #navbar-content a:after {
+    content: "";
+    position: absolute;
+    background-color: #5f8575;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+  }
+
+  #navbar-content a:hover:after {
+    width: 100%;
+  }
+  /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #04aa6d;
+    width: 0%;
+  }
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-title {
+    font-size: 4em;
+    margin-bottom: 50px;
+  }
+  .section-title {
+    font-size: 3em;
+    margin-bottom: 80px;
+  }
+
+  .info-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  .info {
+    width: 700px;
+    margin-left: 50px;
+  }
+
+  .sec-03 {
+    margin-bottom: 100px;
+  }
+  .instruct {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .title h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+  }
+  .card {
+    height: 365px;
+    width: 335px;
+    padding: 60px 35px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  h5 {
+    color: black;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .pra p {
+    color: black;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+
+  #descarea {
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea {
+    height: 200px;
+    border-radius: 5px;
+  }
+  input {
+    height: 30px;
+  }
+  .listingcontainer {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-content: center;
+  }
+  .listingcontent {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .bn59 {
+    background-color: #141414;
+    border: 1px solid rgba(54, 54, 54, 0.6);
+    font-weight: 600;
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+    color: #fff;
+  }
+  .imagesDivStyle {
+    position: relative;
+  }
+
+  .imgs {
+    height: 200px;
+    width: 350px;
+    border: 5px solid;
+    border-color: white;
+    border-radius: 25px;
+  }
+
+  #pdlab {
+    vertical-align: top;
+  }
+
+  #addprodbtn,
+  #selimgsbtn {
+    float: right;
+    margin-left: 10px;
+  }
+
+  #controldiv {
+    display: flex;
+    width: 740px;
+    justify-content: center;
+  }
+
+  #loadlab {
+    width: 200px;
+  }
+}
