@@ -1,0 +1,85 @@
+@media screen and (min-width: 1440px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    body{
+        background: #111222;
+    }
+    /*nav bar css*/
+    #navbar {
+        z-index: 2;
+    }
+
+    #navbar-content {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    #navbar-content h2 {
+        margin-right: 300px;
+        -webkit-text-stroke: 0.5px white;
+        -webkit-text-fill-color: black;
+    }
+
+    #navbar-content span {
+        -webkit-text-fill-color: #60c045;
+    }
+
+    #navbar-content a {
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #navbar-content a:hover {
+        color: linear-gradient(0deg,
+                rgba(34, 193, 195, 1) 0%,
+                rgba(114, 253, 45, 0.7818507863514459) 100%);
+    }
+
+    #navbar-content a:after {
+        content: "";
+        position: absolute;
+        background-color: #5f8575;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+
+    #navbar-content a:hover:after {
+        width: 100%;
+    }
+    /*End nav bar css*/
+    .hero{
+        height: 100%;
+        width: 100%;
+        /* background-image: linear-gradient(rbga(0,0,0,0.4), rgba(0,0,0,0.4),url(img1.jpg));
+        background-position: center;
+        background-size: cover;
+        position: absolute; */
+    }
+    .form-box{
+        width: 380px;
+        height: 480px;
+        position: relative;
+        margin: 6% auto;
+        background: #fff;
+    }
+    .button-box{
+        width: 220px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px #ff61241f;
+        border-radius: 30px;
+    }
+}
