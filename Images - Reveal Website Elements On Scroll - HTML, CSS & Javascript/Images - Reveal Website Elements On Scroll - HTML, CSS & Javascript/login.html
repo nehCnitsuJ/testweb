@@ -47,7 +47,9 @@
           <input type="checkbox" class="check-box" /><span class="sform"
             >Remember Password</span
           >
-          <button type="submit" class="submit-btn">Log In</button>
+          
+            <button type="submit" class="submit-btn">Log In</button>
+          
         </form>
         <!--Register form-->
         <form id="register" class="input-group">
@@ -76,6 +78,13 @@
         </form>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous"></script>
     <script src="login.js"></script>
+    <script>
+        $(".submit-btn").click(function (e) {
+            window.location.assign('index.html');
+        });
+    </script>
   </body>
 </html>
