@@ -99,6 +99,13 @@
     flex-direction: column;
     width: 100%;
   }
+  .containermini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
 
   .main-title {
     font-size: 4em;
@@ -108,7 +115,7 @@
     font-size: 3em;
     margin-bottom: 80px;
   }
-
+  /*Section donate*/
   .info-title {
     font-size: 1.8em;
     margin-bottom: 10px;
@@ -116,9 +123,50 @@
 
   .info {
     width: 700px;
-    margin-left: 50px;
+    margin-left: 20px;
+  }
+  .content {
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .content .image {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .content .image img {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .content .text-box {
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+  }
+
+  .content .text-box h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  /*End section donate*/
   .sec-03 {
     margin-bottom: 100px;
   }
@@ -226,7 +274,7 @@
     flex-direction: column;
     width: 50%;
   }
-
+  /*Adding listing */
   .bn59 {
     background-color: #141414;
     border: 1px solid rgba(54, 54, 54, 0.6);
@@ -274,4 +322,85 @@
   #loadlab {
     width: 200px;
   }
+  /*Chatbot css*/
+  #botimg {
+    width: 400px;
+    height: 400px;
+  }
+  .chatbot {
+    --light-color: #fff;
+    height: 420px;
+    width: 350px;
+    background: var(--light-color);
+    position: relative;
+    box-shadow: 0px 0px 15px 0px black;
+  }
+  .chat-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: #0652c0;
+    color: var(--light-color);
+    font-size: 1.5rem;
+  }
+
+  .chat-header .logo {
+    height: 35px;
+    width: 35px;
+    box-shadow: 0px 0px 10px 0px black;
+  }
+  .chat-header img {
+    height: 100%;
+    width: 100%;
+  }
+  .chat-header .title {
+    padding-left: 10px;
+  }
+  .chat-body {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    align-items: flex-end;
+    overflow-y: auto;
+  }
+  .chat-input {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+  }
+  .input-sec {
+    flex: 9;
+  }
+  .send {
+    flex: 1;
+    padding-right: 4px;
+  }
+  #txtInput {
+    line-height: 30px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    caret-color: black;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .chatbot-message,
+  .user-message {
+    padding: 8px;
+    background: #ccc;
+    margin: 5px;
+    width: max-content;
+    border-radius: 10px 3px 10px 10px;
+  }
+  .chatbot-message {
+    background: #0652c0;
+    color: var(--light-color);
+    align-self: flex-start;
+    border-radius: 10px 10px 3px 10px;
+  }
+  /*End chatbot css*/
 }
