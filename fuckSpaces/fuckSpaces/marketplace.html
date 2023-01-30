@@ -27,13 +27,7 @@
       <div class="container">
         <div class="search">
           <h1>All Products</h1>
-          <input
-            type="text"
-            name=""
-            id="find"
-            placeholder="search here...."
-            onkeyup="filter()"
-          />
+          <input type="text" name="" id="find" placeholder="search here...." />
         </div>
       </div>
     </div>
@@ -42,35 +36,35 @@
       function getShortTitle() {
         if (title.length > 49) title = title.substring(0, 47);
         else return title;
-        return title + "...";
+        return title + '...';
       }
 
       //--------------------IMPORTS + CONFIGRATION----------------------
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js';
       import {
         getDatabase,
         ref,
         set,
         child,
         get,
-      } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+      } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js';
       import {
         getStorage,
         ref as sRef,
         uploadBytesResumable,
         getDownloadURL,
-      } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-storage.js";
+      } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-storage.js';
 
       const firebaseConfig = {
-        apiKey: "AIzaSyAwG7RePlLNiGGfs61BttyXserKakBlq74",
-        authDomain: "pfd-asg-1.firebaseapp.com",
+        apiKey: 'AIzaSyAwG7RePlLNiGGfs61BttyXserKakBlq74',
+        authDomain: 'pfd-asg-1.firebaseapp.com',
         databaseURL:
-          "https://pfd-asg-1-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "pfd-asg-1",
-        storageBucket: "pfd-asg-1.appspot.com",
-        messagingSenderId: "683817910117",
-        appId: "1:683817910117:web:6bc464138c242c9853eb8c",
-        measurementId: "G-PCCLL01552",
+          'https://pfd-asg-1-default-rtdb.asia-southeast1.firebasedatabase.app',
+        projectId: 'pfd-asg-1',
+        storageBucket: 'pfd-asg-1.appspot.com',
+        messagingSenderId: '683817910117',
+        appId: '1:683817910117:web:6bc464138c242c9853eb8c',
+        measurementId: 'G-PCCLL01552',
       };
 
       // Initialize Firebase
@@ -78,14 +72,14 @@
 
       const realdb = getDatabase();
 
-      var OuterDiv = document.getElementById("productsDiv");
+      var OuterDiv = document.getElementById('productsDiv');
       var ArrayOfProducts = [];
-      window.addEventListener("load", GetAllProducts);
+      window.addEventListener('load', GetAllProducts);
 
       function GetAllProducts() {
         const dbref = ref(realdb);
 
-        get(child(dbref, "TheProductRealdb")).then((snapshot) => {
+        get(child(dbref, 'TheProductRealdb')).then((snapshot) => {
           snapshot.forEach((prod) => {
             ArrayOfProducts.push(prod.val());
           });
@@ -123,29 +117,31 @@
           <a href="./contactus.html" class="bn59">Get it now!</a>
           `;
 
-        let newProd = document.createElement("div");
-        newProd.classList.add("productcard");
+        let newProd = document.createElement('div');
+        newProd.classList.add('productcard');
         newProd.innerHTML = html;
         OuterDiv.append(newProd);
       }
 
       function ProductDescription(array) {
-        document.getElementById("description").innerHTML = product.Description;
+        document.getElementById('description').innerHTML = product.Description;
         return ul.outerHTML;
       }
 
-      document.addEventListener("DOMContentLoaded", function filter() {
-        let filter = document.getElementById("find").value.toUpperCase();
-        let item = document.querySelectorAll("productsDiv");
-        let l = document.getElementById("title");
-        console.log(l);
+      let findBox = document.getElementById('find');
+      findBox.addEventListener('keyup', function (evt) {
+        console.log(this.value);
+        // let filter = document.getElementById('find').value.toUpperCase();
+        let filter = this.value;
+        let item = document.querySelectorAll('productsDiv');
+        let l = document.getElementById('title');
         for (var i = 0; i <= l.length; i++) {
-          let a = item[i].getElementsByClassName("title")[0];
+          let a = item[i].getElementsByClassName('title')[0];
           let value = a.innerHTML || a.innerText || a.textContent;
           if (value.toUpperCase().indexOf(filter) > -1) {
-            item[i].style.display = "";
+            item[i].style.display = '';
           } else {
-            item[i].style.display = "none";
+            item[i].style.display = 'none';
           }
         }
       });
