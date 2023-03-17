@@ -21,7 +21,7 @@ ul{
 
 /*Nav Bar Css*/
 header{
-  min-height: 100vh;
+  min-height: 20vh;
 }
 
 .nav-container, .nav-container-inner{
@@ -36,17 +36,17 @@ header{
   grid-template-columns: 1fr 5fr 1fr;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto
+  margin: 0 auto;
+  background: #f2f3f5;
 }
-
 .nav-container-inner{
-  max-width: 1000px;
+  width: 100%;
 }
 
 nav{
+  display: flex;
   z-index: 10;
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   padding: 2em;
@@ -74,6 +74,14 @@ nav .nav-container ul li{
   margin: 0 0.7em;
 }
 
+nav .nav-container img{
+  width: 150px;
+  height: 100px;
+}
+
+#dropdown-btn{
+  font-size: 2em; 
+}
 nav a{
   text-decoration: none;
   font-size: 20px;
@@ -101,12 +109,8 @@ nav a:hover{
   overflow-y: hidden;
 }
 
-.dropdown ul{
-  margin: 1em auto;
-}
-
 .dropdown li{
-  margin: 1em 0;
+  margin: 1em;
 }
 
 .dropdown > div{
@@ -148,6 +152,16 @@ nav a:hover{
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+/*Homepage container*/
+.welcome-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
 }
 
 @media screen and (max-width: 800px){
