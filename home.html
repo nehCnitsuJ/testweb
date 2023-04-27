@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aikiForest</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!--Scroll to top btn-->
+    <div class="scrollToTop-btn flex-center">
+      <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!--Whatsapp btn-->
+    <a href="https://wa.me/6591125473" class="wa-btn">
+      <i class="bi bi-whatsapp" id="icon"></i>
+      <span class="text">Whatsapp Us!</span>
+    </a>
+
+    <!--Splash Screen-->
+    <div class="splash-screen">
+      <div class="ss-heading">
+        <div class="ssText-container">
+          <span class="msg">Welcome&nbsp</span><span class="msg">To&nbsp</span
+          ><span class="msg">aikiForest</span>
+        </div>
+
+        <div class="ss-img">
+          <img src="imgs/aikiforestLogo.png" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <!--Navigation bar-->
+      <div id="navBar"></div>
+      <div class="welcome-container">
+        <div class="text-box">
+          <h3>The educational powerhouse of contemporary aikido</h3>
+          <p>
+            We deliver & develop high-quality & learner-centric aikido
+            programmes. Catering towards all age groups starting from as young
+            as 4 years old and teaching them how to protect themselves using
+            aikido.
+          </p>
+        </div>
+      </div>
+      <section class="section about-section">
+        <div class="text-details flex-center" id="about-text-details">
+          <div class="aboutimg-container flex-center">
+            <img src="imgs/about-img.jpg" />
+          </div>
+          <p id="about-p">
+            Aikido is a Japanese self-defense martial arts which is often
+            translated as "the way of harmonious spirit". The primary goal of
+            aikido is to overcome oneself instead of cultivating violence and
+            aggressivess, said by the founder of Aikido - Ueshiba Morihei. This
+            involves throwing and twisting techniques which aims in turning the
+            attacker's momentum against himself. Watch the following videos
+            below by our Principal, parents and students about learning aikido
+            at aikiForest.
+          </p>
+        </div>
+      </section>
+      <!--Aikido Videos Section-->
+      <section class="section" id="video-section">
+        <div class="videos-container flex-center">
+          <div class="video-card flex-center">
+            <video controls>
+              <source src="videos/student.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card flex-center">
+            <video controls>
+              <source src="videos/student.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-card flex-center">
+            <video controls>
+              <source src="videos/student.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+      <!--Class section-->
+      <section class="section" id="sectionAfter">
+        <div class="class-container text-details">
+          <div class="class-details">
+            <p id="about-p-c">
+              <span>
+                At aikiForest, we offer various classes ranging from children to
+                <span id="highlight">youth & adult.</span>
+              </span>
+              Students will be able to learn movement & technique fundamentals
+              from basic to advance levels based on their
+              <span id="age-group"><a href="class.html">age groups.</a></span>
+            </p>
+            <a href="trial.html" class="trial-btn">Book a Trial</a>
+          </div>
+          <div class="aboutimg-container flex-center">
+            <img src="imgs/Cclass3.jpg" />
+          </div>
+        </div>
+      </section>
+      <!--Footer-->
+      <div id="footer"></div>
+    </div>
+
+    <script src="js/whatsapp.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
