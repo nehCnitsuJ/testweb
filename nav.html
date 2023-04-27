@@ -148,23 +148,23 @@
 </style>
 
 <script>
-  $('.spanlist').on('click', function () {
-    $('html').addClass('scroll-lock');
-    $('body').addClass('scroll-lock');
-    $('#nav-modal').removeClass('d-none');
+  $(".spanlist").on("click", function () {
+    $("html").addClass("scroll-lock");
+    $("body").addClass("scroll-lock");
+    $("#nav-modal").removeClass("d-none");
   });
 
-  $('.spanlist').on('mouseenter', function () {
-    $(this).children.removeClass('bi-list').addClass('bi-x');
+  $(".spanlist").on("mouseenter", function () {
+    $(this).children().removeClass("bi-list").addClass("bi-x");
   });
 
-  $('.spanlist').on('mouseleave', function () {
-    $(this).children.removeClass('bi-x').addClass('bi-list');
+  $(".spanlist").on("mouseleave", function () {
+    $(this).children().removeClass("bi-x").addClass("bi-list");
   });
 
-  $('#close-nav-modal').on('click', function () {
-    $('#nav-modal').addClass('d-none');
-    $('html').removeClass('scroll-lock');
-    $('body').removeClass('scroll-lock');
+  $("#close-nav-modal").on("click", function () {
+    $("#nav-modal").addClass("d-none");
+    $("html").removeClass("scroll-lock");
+    $("body").removeClass("scroll-lock");
   });
 </script>
