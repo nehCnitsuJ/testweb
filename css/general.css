@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@100;200;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@100;200;300&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Poppins", sans-serif; */
-  font-family: "Italiana", serif;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Italiana', serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 html {
@@ -173,7 +173,7 @@ hr.dashed {
 /*Nav bar css*/
 nav {
   position: fixed;
-  z-index: 9998;
+  z-index: 1040;
   width: 100%;
   backdrop-filter: blur(15px) brightness(75%) saturate(70%);
 }
