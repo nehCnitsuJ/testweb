@@ -14,35 +14,9 @@
   </div>
 </nav>
 
-<div
-  id="nav-modal"
-  class="d-none"
-  style="
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    background-color: #c0b7fd;
-    overflow-x: hidden;
-    z-index: 9999;
-    position: fixed;
-    display: flex;
-    padding: 2.5rem;
-  "
->
-  <div
-    style="
-      display: flex;
-      flex-direction: column;
-      flex-grow: 5;
-      justify-content: center;
-      align-items: flex-end;
-      font-size: 5rem;
-      font-weight: 1000;
-      color: white;
-      padding-right: 4rem;
-    "
-  >
-    <div style="display: flex; flex-direction: column">
+<div id="nav-modal">
+  <div class="left-nav">
+    <div class="left-nav-links">
       <a href="promotion.html">Promotions</a>
       <a href="location.html">Locations</a>
       <a href="about.html">About</a>
@@ -50,18 +24,8 @@
     </div>
   </div>
 
-  <div
-    style="
-      display: flex;
-      flex-direction: column;
-      flex-grow: 5;
-      justify-content: space-around;
-      font-size: 2.5rem;
-      font-weight: 1000;
-      padding: 5rem 0 5rem 2rem;
-    "
-  >
-    <div style="display: flex; flex-direction: column">
+  <div class="right-nav">
+    <div class="right-nav-links">
       <a href="class.html">Classes</a>
       <a href="program.html">Programmes</a>
       <a href="workshop.html">Workshops</a>
@@ -72,50 +36,17 @@
     </div>
   </div>
 
-  <div style="display: flex; flex-direction: column; flex-grow: 1">
-    <p
-      style="
-        font-weight: 1000;
-        font-size: 30px;
-        margin-right: 2.5rem;
-        margin-top: 5rem;
-      "
-      id="close-nav-modal"
-    >
-      X
-    </p>
+  <div class="x-nav">
+    <i class="bi bi-x" id="close-nav-modal"></i>
   </div>
 </div>
 
-<style>
-  #nav-modal > div:nth-child(1) > div a,
-  #nav-modal > div:nth-child(2) > div a {
-    color: white;
-    text-decoration: none;
-    margin-bottom: 2rem;
-  }
-
-  #nav-modal > div:nth-child(1) > div a:hover,
-  #nav-modal > div:nth-child(2) > div a:hover {
-    color: #231d57;
-  }
-
-  .scroll-lock {
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .d-none {
-    display: none !important;
-  }
-</style>
-
 <script>
+  $("#nav-modal").fadeToggle(0);
   $(".spanlist").on("click", function () {
     $("html").addClass("scroll-lock");
     $("body").addClass("scroll-lock");
-    $("#nav-modal").removeClass("d-none");
+    $("#nav-modal").fadeToggle("slow");
   });
 
   $(".spanlist").on("mouseenter", function () {
@@ -127,7 +58,7 @@
   });
 
   $("#close-nav-modal").on("click", function () {
-    $("#nav-modal").addClass("d-none");
+    $("#nav-modal").fadeToggle("slow");
     $("html").removeClass("scroll-lock");
     $("body").removeClass("scroll-lock");
   });
