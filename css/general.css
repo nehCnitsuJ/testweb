@@ -172,7 +172,7 @@ hr.dashed {
 
 /*Nav bar css*/
 nav {
-  position: fixed;
+  position: absolute;
   z-index: 1040;
   width: 100%;
 }
